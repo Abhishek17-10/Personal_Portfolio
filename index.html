@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/7f3350e4df.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#services">Key Skills</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>UI/UX Designer, Web design and DSA</p>
+            <h1>Hi, I'm <span>Abhishek</span><br>Singh from India</h1>
+        </div>
+    </div>
+
+</div>
+<!----------about------->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me <Menu></Menu></h1>
+                <p>I'm a passionate B.Tech final year student at Manipal University Jaipur, where I'm weaving the magic of web development with the artistry of UI/UX design. My fingertips dance across code, breathing life into vibrant interfaces and user experiences. But my journey doesn't stop there! I'm currently sharpening my skills in the intricate world of data structures and algorithms, perfecting my problem-solving prowess on LeetCode. Also i have some Personal side projects on Python and ML as beginner
+
+                    Beyond the screen, my competitive spirit takes center stage. As a former state-level football player, I understand the thrill of teamwork and the grit it takes to excel. This dedication spills over into all aspects of my life, fueling my drive to learn, innovate, and leave a lasting impact.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Certifications</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Introduction to UI design by Coursera</li>
+                        <li><span>Web Development</span><br>Complete Web development bootcamp 2022 by Udemy</li>
+                        <li><span>Data Structures</span><br>Dynamic Programming and greedy algorithms by Coursera</li>
+                        <li><span>Database Foundation</span><br>Database Foundation by Oracle</li>
+                        <li><span>Salesforce</span><br>Salesforce Foundation</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>Salesforce</span><br>Intern at Deloitte Salesforce for 3 months</li>
+                        <li><span>Research</span><br>Research on ML/DL based project on Gait recognition</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>10th</span><br>2018 CBSE 80% </li>
+                        <li><span>10+2</span><br>2020 CBSE 80%</li>
+                        <li><span>Under-Graduate (2020-2024)</span><br>BTech CSE from Manipal University Jaipur</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------services------------->
+<div id="services">
+    <div class=" container">
+        <h1 class="sub-title">Key Skills</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+               <h2>Web Design</h2> 
+               <p>Passionate about creating engaging web experiences, I completed the Udemy 2022 Full Stack Web Development Course and applied my knowledge to build standalone projects like a Netflix-inspired website and an e-commerce platform. These projects allowed me to hone my front-end skills, with the Netflix clone achieving and the e-commerce website featuring</p>
+               <a href="https://github.com/Abhishek17-10/Netflix_Clone">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-regular fa-file-code"></i>
+                <h2>UI Design</h2> 
+                <p>I'm also a certified UI designer with a passion for creating intuitive and engaging experiences. I've successfully designed interfaces for various college clubs, ensuring user-friendliness and achieving their specific goals. As i have created sorting-visualization using UI concept</p>
+                <a href="https://github.com/Abhishek17-10/sorting-visualization/tree/main">sorting-visualization</a>
+             </div>
+             <div>
+                <i class="fa-solid fa-c"></i>
+                <h2>Data Structures and Algorithms</h2> 
+                <p>Solved 100+ problems on LeetCode and GeeksForGeeks, honing my skills in data structures and algorithms to tackle complex technical challenges.
+                    My consistent practice on platforms like LeetCode (100+ problems solved) has equipped me with efficient problem-solving techniques and a deep understanding of algorithms.</p>
+                <a href="https://leetcode.com/Abhishek2773/">leetcode</a><br><a href="https://auth.geeksforgeeks.org/user/abhi007sagar">GeeksForGeeks</a>
+
+             </div>
+
+        </div>
+    </div>
+
+</div>
+<!--------------Projects------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>E-commerce Website</h3>
+                    <p>Made a E-commerce Website from scratch by using HTML, CSS and Javascript</p>
+                    <a href="https://github.com/Abhishek17-10/Ecommerce-Website-HTML-CSS-javascript-"><i class="fa-brands fa-square-github"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>The Duo Studio</h3>
+                    <p>Duo studio is a website which is bascially a Clone of a Studio website that contains HTML , CSS , Javascript which also contains some transitions and effects at every hover</p>
+                    <a href="https://github.com/Abhishek17-10/The_Duo_Studio"><i class="fa-brands fa-square-github"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Football game By using Python</h3>
+                    <p>Made a simple 2D football game by using pycharm framework in python..Which basically uses the the concept of Manhattan distance by the AI to reach towards the ball</p>
+                    <a href="https://github.com/Abhishek17-10/Robot-soccer-game"><i class="fa-brands fa-square-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/Abhishek17-10/" class="btn">See More</a>
+        
+    </div>
+</div>
+<!-----------------Contact---------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>abhishekyadav2773@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9116550238</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/abhishek-singh-9aba98209/"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+                    <a href="https://www.instagram.com/17_abhi__/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/Abhishe88971667"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.facebook.com/abhisheksingh.randyorton"><i class="fa-brands fa-facebook"></i></a>
+
+
+                </div>
+                <a href="images/MY-CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright<i class="fa-solid fa-copyright"></i> Abhishek</p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>  
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script> 
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyUIwQhhYMGBLV1myfapQph6eFfTsXyRQkk7UUQ_P0bKUH62B3L6Daff-B1QTYLbyvl/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
